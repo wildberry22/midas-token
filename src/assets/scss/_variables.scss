@@ -1,0 +1,39 @@
+:root {
+	/*========== Font family ==========*/
+	--main-font: 'Inter', sans-serif;
+
+	/*========== Font weight ==========*/
+	--font-weight-decoration: 100;
+	--font-weight-main-text: 500;
+	--font-weight-bold-text: 600;
+	--font-weight-button: 700;
+	--font-weight-title: 700;
+
+	/*========== Font size ==========*/
+	--title-fz: 130px;
+	--subtitle-fz: 80px;
+
+	--text-big-fz: 48px;
+	--text-fz: 32px;
+	--text-small-fz: 24px;
+
+	--button-fz: 24px;
+	--additional-info-fz: 16px;
+
+	--additional-fz-1: 20px;
+	--additional-fz-2: 18px;
+
+	/*========== Colors ==========*/
+	--text-color: #ffffff;
+	--main-color: #43A1F7;
+	--full-background-color: #181b20;
+	--background-color: #0A0C0F;
+	--linear-1-color: linear-gradient(267.57deg, #577CFF 0%, #4CBFFF 100%);
+	--linear-2-color: linear-gradient(267.57deg, #FB4A4A 0%, #9B4CFF 100%);
+	--linear-3-color: linear-gradient(43.67deg, #FFC657 24.69%, #FFD977 75.86%);
+
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+}

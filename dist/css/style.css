@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+:root {
+  /*========== Font family ==========*/
+  --main-font: 'Inter', sans-serif;
+  /*========== Font weight ==========*/
+  --font-weight-decoration: 100;
+  --font-weight-main-text: 500;
+  --font-weight-bold-text: 600;
+  --font-weight-button: 700;
+  --font-weight-title: 700;
+  /*========== Font size ==========*/
+  --title-fz: 130px;
+  --subtitle-fz: 80px;
+  --text-big-fz: 48px;
+  --text-fz: 32px;
+  --text-small-fz: 24px;
+  --button-fz: 24px;
+  --additional-info-fz: 16px;
+  --additional-fz-1: 20px;
+  --additional-fz-2: 18px;
+  /*========== Colors ==========*/
+  --text-color: #ffffff;
+  --main-color: #43A1F7;
+  --full-background-color: #181b20;
+  --background-color: #0A0C0F;
+  --linear-1-color: linear-gradient(267.57deg, #577CFF 0%, #4CBFFF 100%);
+  --linear-2-color: linear-gradient(267.57deg, #FB4A4A 0%, #9B4CFF 100%);
+  --linear-3-color: linear-gradient(43.67deg, #FFC657 24.69%, #FFD977 75.86%);
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+/* font-family: 'Inter', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-main-text);
+  font-size: var(--text-fz);
+  line-height: 125%;
+  color: var(--text-color);
+  background: var(--full-background-color); }
