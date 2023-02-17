@@ -34,7 +34,7 @@
 		<div class="banner">
 			<div class="container">
 				<div class="banner-wrapper">
-					<div class="banner-text">
+					<div class="banner__text">
 						<p>Delisting announcement. 12 DeFi and Masternode assets will be delisted. Withdraw by March 31.</p>
 						<span>|</span>
 						<a href="#">Read more</a>
@@ -87,7 +87,7 @@
 
 	<main>
 		<!-- ========== Main ========== -->
-		<section class="main">
+		<section class="main section">
 			<div class="container">
 				<h1 class="main__title title">
 					Unlock the full potential of Midas ecosystem
@@ -154,9 +154,11 @@
 					<div class="block block-3">
 						<div class="block-img">
 							<div class="block-img__coin">
-								<svg width="52" height="28" viewBox="0 0 52 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd" d="M45.5 0L0 28H52L45.5 0ZM6.5 0L21.6613 11.452L0 28L6.5 0Z" fill="white"/>
-								</svg>									
+								<div class="block-img__coin-wrapper">
+									<svg width="52" height="28" viewBox="0 0 52 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M45.5 0L0 28H52L45.5 0ZM6.5 0L21.6613 11.452L0 28L6.5 0Z" fill="white"/>
+									</svg>	
+								</div>								
 							</div>
 							<div class="block-img__graph">
 								<svg width="304" height="129" viewBox="0 0 304 129" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,37 +183,13 @@
 		</section>
 
 		<!-- ========== Metrics ========== -->
-		<section class="metrics">
+		<section class="metrics section">
 			<div class="container">
-				<h2 class="metrics__title title">Midas token metrics</h2>
+				<div class="metrics-wrapper">
+					<h2 class="metrics__title title">Midas token metrics</h2>
 
 				<div class="metrics-numbers">
-					<div class="circle">
-						<svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask0_1_553" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="724" height="724">
-							<circle cx="362" cy="362" r="359.5" stroke="url(#paint0_linear_1_553)" stroke-width="5"/>
-							</mask>
-							<g mask="url(#mask0_1_553)">
-							<circle cx="362" cy="362" r="359.5" stroke="url(#paint1_radial_1_553)" stroke-width="5"/>
-							</g>
-							<defs>
-							<linearGradient id="paint0_linear_1_553" x1="362" y1="724" x2="362" y2="1.96732e-06" gradientUnits="userSpaceOnUse">
-							<stop offset="0.347024" stop-color="white" stop-opacity="0"/>
-							<stop offset="1" stop-color="white"/>
-							</linearGradient>
-							<radialGradient id="paint1_radial_1_553" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(673.075 0.0232352) rotate(133.365) scale(995.882 285240)">
-							<stop stop-color="#43D7F7"/>
-							<stop offset="1" stop-color="#00F79E"/>
-							</radialGradient>
-							</defs>
-						</svg>							
-					</div>
-
-					<div class="metrics-numbers__price">
-						<span class="price number">$19.24</span>
-						<span class="text">Current price</span>
-					</div>
-
+					
 					<ul class="metrics-numbers__list">
 						<li class="metrics-numbers__list-item">
 							<span class="number">$183,241</span>
@@ -226,6 +204,35 @@
 							<span class="text">Circulation supply</span>
 						</li>
 					</ul>
+
+					<div class="metrics-numbers__price">
+						<span class="price number">$19.24</span>
+						<span class="text">Current price</span>
+					</div>
+
+					
+
+				</div>
+
+				<div class="circle">
+					<svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask0_1_553" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="724" height="724">
+						<circle cx="362" cy="362" r="359.5" stroke="url(#paint0_linear_1_553)" stroke-width="5"/>
+						</mask>
+						<g mask="url(#mask0_1_553)">
+						<circle cx="362" cy="362" r="359.5" stroke="url(#paint1_radial_1_553)" stroke-width="5"/>
+						</g>
+						<defs>
+						<linearGradient id="paint0_linear_1_553" x1="362" y1="724" x2="362" y2="1.96732e-06" gradientUnits="userSpaceOnUse">
+						<stop offset="0.347024" stop-color="white" stop-opacity="0"/>
+						<stop offset="1" stop-color="white"/>
+						</linearGradient>
+						<radialGradient id="paint1_radial_1_553" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(673.075 0.0232352) rotate(133.365) scale(995.882 285240)">
+						<stop stop-color="#43D7F7"/>
+						<stop offset="1" stop-color="#00F79E"/>
+						</radialGradient>
+						</defs>
+					</svg>							
 				</div>
 
 				<div class="metrics-links">
@@ -238,61 +245,64 @@
 						<span>Smart contract -></span>
 					</a>
 				</div>
+				</div>
 			</div>
 		</section>
 
 		<!-- ========== Stake ========== -->
-		<section class="stake">
+		<section class="stake section">
 			<div class="container">
-				<h2 class="stake__title title">
-					Stake Midas token and
-					<span>Earn 30% APY</span>
-				</h2>
-
-				<div class="stake__text">
-				 	<span>MIDAS token</span> is based on Fantom network with total supply of <span>5,000,000 tokens</span> generating rewards for its holders.
-				</div>
-
-				<div class="stake-statistics">
-					<div class="stake-statistics__text">Over</div>
-
-					<ul class="stake-list">
-						<li class="stake-list__item">
-							<div class="stake-list__item-icon">
-								<img src="./img/stake-section/wallet.svg" alt="wallet icon">
-							</div>
-							<div class="stake-list__item-text">
-								<span class="number">$30 million</span>
-								<span class="descr">Are staking MIDAS tokens</span>
-							</div>
-						</li>
-
-						<li class="stake-list__item">
-							<div class="stake-list__item-icon">
-								<img src="./img/stake-section/users.svg" alt="users icon">
-							</div>
-							<div class="stake-list__item-text">
-								<span class="number">2,600 users</span>
-								<span class="descr">Are staking MIDAS tokens</span>
-							</div>
-						</li>
-
-						<li class="stake-list__item">
-							<div class="stake-list__item-icon">
-								<img src="./img/stake-section/layers.svg" alt="layers icon">
-							</div>
-							<div class="stake-list__item-text">
-								<span class="number">1,800,000</span>
-								<span class="descr">Total staked MIDAS</span>
-							</div>
-						</li>
-					</ul>
+				<div class="stake-wrapper">
+					<h2 class="stake__title title">
+						Stake Midas token and
+						<span>Earn 30% APY</span>
+					</h2>
+	
+					<div class="stake__text">
+						<span>MIDAS token</span> is based on Fantom network with total supply of <span>5,000,000 tokens</span> generating rewards for its holders.
+					</div>
+	
+					<div class="stake-statistics">
+						<div class="stake-statistics__text">Over</div>
+	
+						<ul class="stake-list">
+							<li class="stake-list__item">
+								<div class="stake-list__item-icon">
+									<img src="./img/stake-section/wallet.svg" alt="wallet icon">
+								</div>
+								<div class="stake-list__item-text">
+									<span class="number">$30 million</span>
+									<span class="descr">Are staking MIDAS tokens</span>
+								</div>
+							</li>
+	
+							<li class="stake-list__item">
+								<div class="stake-list__item-icon">
+									<img src="./img/stake-section/users.svg" alt="users icon">
+								</div>
+								<div class="stake-list__item-text">
+									<span class="number">2,600 users</span>
+									<span class="descr">Are staking MIDAS tokens</span>
+								</div>
+							</li>
+	
+							<li class="stake-list__item">
+								<div class="stake-list__item-icon">
+									<img src="./img/stake-section/layers.svg" alt="layers icon">
+								</div>
+								<div class="stake-list__item-text">
+									<span class="number">1,800,000</span>
+									<span class="descr">Total staked MIDAS</span>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- ========== Utility ========== -->
-		<section class="utility">
+		<section class="utility section">
 			<div class="container">
 				<h2 class="utility__title title">Midas token utility</h2>
 
@@ -586,7 +596,7 @@
 		</section>
 
 		<!-- ========== Support ========== -->
-		<section class="support">
+		<section class="support section">
 			<div class="container">
 				<h2 class="support__title title">How we support Midas token</h2>
 
@@ -647,7 +657,7 @@
 		</section>
 
 		<!-- ========== Instruction ========== -->
-		<section class="instruction">
+		<section class="instruction section">
 			<div class="container">
 				<h2 class="instruction__title title">How to buy Midas token</h2>
 
@@ -694,7 +704,7 @@
 		</section>
 
 		<!-- ========== Questions ========== -->
-		<section class="questions">
+		<section class="questions section">
 			<div class="container">
 				<h2 class="questions__title title">Frequently asked questions</h2>
 
