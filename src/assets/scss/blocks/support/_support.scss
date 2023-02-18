@@ -1,0 +1,66 @@
+.support {
+  &__title {
+    margin-bottom: 260px;
+    text-align: center;
+  }
+  &-circles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 892px;
+      height: 218px;
+      background: linear-gradient(90.07deg, #BA62FF 18.51%, #57B1F2 80.43%);
+      filter: blur(120px);
+      border-radius: 50%;
+    }
+    .circle-l {
+      position: relative;
+      z-index: 1;
+      margin-right: -40px;
+    }
+    .circle-r {
+      position: relative;
+      z-index: 1;
+      margin-left: -40px;
+    }
+  }
+  &-numbers {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: -320px;
+    .number {
+      display: block;
+      font-weight: var(--font-weight-title);
+      font-size: var(--subtitle-fz);
+      line-height: 1;
+      text-align: center;
+      letter-spacing: -0.06em;
+      color: var(--text-color);
+      margin-bottom: 16px;
+    }
+    .descr {
+      display: block;
+      font-size: var(--text-fz);
+      line-height: 125%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: rgba(var(--text-color-rgb), .36);
+    }
+  }
+  &-number {
+    max-width: 580px;
+    width: 100%;
+  }
+}

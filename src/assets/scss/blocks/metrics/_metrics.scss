@@ -94,12 +94,15 @@
     border-radius: 32px;
     padding: 32px;
     transition: .2s linear;
-    span {
+    &-text {
       font-weight: var(--font-weight-bold-text);
       font-size: var(--text-fz);
       line-height: 1;
       letter-spacing: -0.032em;
       color: var(--text-color);
+      span {
+        letter-spacing: 0;
+      }
     }
     &:hover {
       background: rgba(255, 255, 255, 0.13);
