@@ -90,10 +90,53 @@
 /*!*******************************!*\
   !*** ./src/assets/js/main.js ***!
   \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_accordion_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/accordion.js */ "./src/assets/js/modules/accordion.js");
 
+document.addEventListener("DOMContentLoaded", () => {
+  // close header banner
+  window.addEventListener('click', e => {
+    if (e.target.hasAttribute('data-banner-close') || e.target.closest('[data-banner-close]')) {
+      document.querySelector('.banner').remove();
+    }
+  }); // questions-accordion
+
+  Object(_modules_accordion_js__WEBPACK_IMPORTED_MODULE_0__["default"])(document.querySelector('.questions-accordion'));
+});
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/accordion.js":
+/*!********************************************!*\
+  !*** ./src/assets/js/modules/accordion.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return accordion; });
+function accordion(accordionWrapperEl) {
+  const accordionHeaders = accordionWrapperEl.querySelectorAll('[data-accordion="title"]');
+  accordionHeaders.forEach(accordionHeader => {
+    accordionHeader.addEventListener('click', event => {
+      const currentAccordionItem = event.currentTarget.parentNode;
+      const accordionContent = currentAccordionItem.querySelector('[data-accordion="content"]'); // Toggle the active class on the current accordion item
+
+      currentAccordionItem.classList.toggle('active'); // Toggle the height of the accordion content
+
+      if (currentAccordionItem.classList.contains('active')) {
+        accordionContent.style.height = accordionContent.scrollHeight + 'px';
+      } else {
+        accordionContent.style.height = '0px';
+      }
+    });
+  });
+}
 
 /***/ })
 
