@@ -1,0 +1,132 @@
+@media screen and (max-width: 1240px) {
+  .main-blocks {
+    grid-template-columns: repeat(3, auto);
+  }
+  .main .block {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    letter-spacing: -0.08em;
+  }
+  .main-blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main .block {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main {
+    padding-top: 150px;
+  }
+  .main__title {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .main {
+    padding-top: 130px;
+  }
+  .main__title {
+    margin-bottom: 80px;
+  }
+  .main .block {
+    width: 340px;
+    padding: 24px;
+  }
+  .main .block-img {
+    margin-bottom: 20px;
+  }
+  .main .block-1 .block-img__svg svg {
+    transform: scale(0.9);
+  }
+  .main .block-3 .block-img__graph svg {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__buy::after {
+    bottom: 9px;
+    height: 2px;
+  }
+  .main .block {
+    width: 305px;
+  }
+  .main .block__text {
+    --text-small-fz: 18px;
+  }
+  .main-blocks {
+    gap: 15px;
+  }
+  .main .block-1 .block-img__svg {
+    display: flex;
+  }
+  .main .block-1 .block-img__svg svg {
+    max-width: 280px;
+    transform: scale(1);
+  }
+  .main .block-3 .block-img__graph svg {
+    transform: scale(0.85);
+  }
+  .main .block-3 .block-img__coin-wrapper {
+    width: 82px;
+    height: 82px;
+  }
+}
+
+
+@media screen and (max-width: 679px) {
+  .main {
+    padding-top: 140px;
+    border-radius: 0px 0px 24px 24px;
+  }
+  .main .block {
+    width: 250px;
+  }
+  .main .block {
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .main .block-img {
+    height: 120px;
+  }
+  .main .block-1 .block-img__info {
+    font-size: 14px;
+  }
+  .main .block-2 .block-img {
+    gap: 15px;
+  }
+  .main .block-2 .block-img__coin {
+    width: 62px;
+    height: 62px;
+  }
+  .main .block-2 .block-img__coin svg {
+    width: 28px;
+  }
+  .main .block-2 .block-img__coin--m svg {
+    width: 34px;
+  }
+  .main .block-3 .block-img__graph svg {
+    transform: scale(1);
+    width: 218px;
+    display: block;
+  } 
+  .main .block-3 .block-img__coin-wrapper {
+    width: 68px;
+    height: 68px;
+  }
+  .main .block-3 .block-img__coin-wrapper svg {
+    width: 44px;
+  }
+  .main .block-3 .block-img__graph {
+    height: 120px;
+  }
+}

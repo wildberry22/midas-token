@@ -115,6 +115,13 @@
       }
     }
   }
+  &-item--2 {
+    .utility-item__img {
+      justify-content: start; 
+      padding-left: 20px;
+    }
+  }
+  
   &__btn {
     margin: 0 auto;
   }

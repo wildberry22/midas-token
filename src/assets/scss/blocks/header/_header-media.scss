@@ -1,0 +1,79 @@
+@media screen and (max-width: 899px) {
+  .banner__text {
+    justify-content: start;
+    gap: 7px;
+  }
+  .navigation {
+    padding: 14px 0;
+  }
+  .navigation-l {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner__text {
+    max-width: 480px;
+    text-align: center;
+    display: inline-block;
+  }
+  .banner__text p {
+    display: inline;
+    line-height: 144%;
+  }
+  .banner__text span {
+    display: none;
+  }
+  .banner__text a {
+    margin-left: 5px;
+    position: relative;
+    color: var(--text-color);
+    padding-right: 18px;
+    &::before {
+      content: '->';
+      font-family: var(--main-font);
+      font-weight: var(--font-weight-main-text);
+      font-size: 14px;
+      line-height: 1;
+      color: var(--text-color);
+      letter-spacing: 0;
+      position: absolute;
+      right: 0;
+      top: 2px;
+    }
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+  .navigation {
+    --menu-fz: 14px;
+  }
+  .navigation .menu-list__item a {
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+  .navigation-wrapper {
+    gap: 30px;
+  }
+  .navigation .account {
+    max-width: 200px;
+    line-height: 120%;
+    text-align: right;
+  }
+  .navigation .account::after {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navigation__logo img {
+    max-width: 36px;
+  }
+  .navigation-l {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .navigation .account {
+    max-width: 110px;
+  }
+}

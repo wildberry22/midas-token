@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+*::selection {
+  background-color: #fff;
+  color: #0A0C0F;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -13,9 +17,12 @@ body {
   line-height: 125%;
   color: var(--text-color);
   background: var(--full-background-color);
+
+  overflow-x: hidden;
 }
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 .section {
@@ -76,4 +83,58 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, #7e57ff 0%, #4c85ff 100%);;
   background-clip: content-box;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 15px;
+    max-width: 994px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 880px;
+  }
+  .title {
+    --title-fz: 110px;
+  }
+  .section {
+    border-radius: 48px;
+    padding: 100px 0;
+  }
+  .button {
+    padding: 18px 32px;
+    border-radius: 18px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  :root {
+    --button-fz: 20px;
+  }
+  .container {
+    max-width: 748px;
+  }
+  .title {
+    --title-fz: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 80px 0;
+  }
+  .title {
+    --title-fz: 80px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .title {
+    --title-fz: 70px;
+  }
+  .section {
+    border-radius: 24px;
+  }
 }

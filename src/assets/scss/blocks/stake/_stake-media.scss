@@ -1,0 +1,124 @@
+@media screen and (max-width: 1200px) {
+  .stake-statistics__text {
+    position: absolute;
+    left: -150px;
+  }
+  .stake-statistics {
+    padding-left: 370px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .stake__title {
+    max-width: 800px;
+  }
+  .stake__text {
+    font-size: var(--text-fz);
+  }
+  .stake-list__item-text .number {
+    --subtitle-fz: 70px;
+    margin-bottom: 0;
+  }
+  .stake-list__item-text .descr {
+    --text-fz: 28px;
+    font-size: var(--text-fz);
+  }
+  .stake-statistics {
+    padding-left: 280px;
+  }
+  .stake-list__item {
+    gap: 30px;
+  }
+  .stake-statistics__text {
+    left: -225px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .stake-wrapper::after {
+    width: 800px;
+    height: 800px;
+  }
+  .stake__title {
+    max-width: 660px;
+    margin-bottom: 70px;
+  }
+  .stake__title span {
+    font-size: 70px;
+    padding: 15px 24px;
+    border-radius: 40px;
+    margin-top: 5px;
+    transform: rotate(-2deg) translateX(-10px);
+  }
+  .stake__text {
+    margin-bottom: 42px;
+  }
+  .stake-list {
+    gap: 50px;
+  }
+  .stake-statistics {
+    padding-left: 240px;
+  }
+  .stake-list__item-text .number {
+    --subtitle-fz: 56px;
+  }
+  .stake-statistics__text {
+    left: -220px;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .stake__title {
+    max-width: 600px;
+  }
+  .stake-list__item-text .number {
+    --subtitle-fz: 48px;
+  }
+  .stake-list__item-text .descr {
+    --text-fz: 24px;
+  }
+  .stake-list__item-icon {
+    width: 84px;
+    height: 84px;
+  }
+  .stake-list__item-icon img {
+    width: 40px;
+  }
+  .stake-list__item {
+    gap: 20px;
+  }
+  .stake-statistics {
+    padding-left: 220px;
+  }
+  .stake-statistics__text {
+    font-size: 100px;
+    left: -190px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .stake__title {
+    max-width: 480px;
+  }
+  .stake__title span {
+    font-size: 62px;
+    padding: 10px 18px;
+    border-radius: 25px;
+  }
+  .stake__text {
+    --text-fz: 28px;
+  }
+  .stake-list {
+    gap: 40px;
+  }
+  .stake-statistics {
+    padding-left: 120px;
+  }
+  .stake-list__item-text .number {
+    --subtitle-fz: 42px;
+  }
+  .stake-statistics__text {
+    left: -255px;
+  }
+}
