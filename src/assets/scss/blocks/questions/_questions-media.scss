@@ -90,3 +90,102 @@
     gap: 12px;
   } 
 }
+
+@media screen and (max-width: 577px) {
+  .questions-contact__link {
+    --text-fz: 20px
+  }
+  .questions-accordion .accordion-item__title span {
+    max-width: calc(100% - 40px);
+  }
+  .questions-accordion .accordion-item__title button,
+  .questions-accordion .accordion-item__title:hover button,
+  .questions-accordion .accordion-item.active .accordion-item__title button,
+  .questions-accordion .accordion-item.active:hover .accordion-item__title button {
+    background: transparent;
+  }
+  .questions-accordion .accordion-item__title button {
+    right: 0;
+  }
+   
+}
+
+@media screen and (max-width: 479px) {
+  .questions-contact__text {
+    --text-fz: 20px;
+  } 
+  .questions-contact__item-text {
+    display: none;
+  }
+  .questions-contact__item-icon {
+    display: flex;
+  }
+  .questions-contact__list {
+    gap: 20px;
+  }
+  .questions-contact__item-icon svg {
+    width: 24px;
+  }
+  .questions-contact__link {
+    width: 48px;
+    height: 48px;
+    background: rgba(67, 161, 247, 0.16);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions-contact {
+    margin-bottom: 40px;
+  }
+  .questions-accordion .accordion-item__title {
+    padding: 14px 16px;
+    border-radius: 16px;
+  }
+  .questions-accordion .accordion-item__title span {
+    --additional-fz-3: 18px;
+    max-width: calc(100% - 20px);
+  }
+  .questions-accordion .accordion-item__title button {
+    top: 1px;
+    right: -4px;
+  }
+  .questions-accordion .accordion-item__content-wrapper {
+    --additional-fz-1: 16px;
+    padding: 0 16px 16px;
+    gap: 12px;
+  }
+  .questions-accordion .accordion-item__content-wrapper ul li {
+    padding-left: 24px;
+  }
+  .questions-accordion .accordion-item__content-wrapper ul li::before {
+    width: 10px;
+    height: 10px;
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .questions {
+    padding: 40px 0;
+  }
+  .questions-accordion .accordion-item__title span {
+    --additional-fz-3: 16px;
+    max-width: calc(100% - 15px);
+  }
+  .questions-accordion .accordion-item__title button {
+    top: 0;
+    right: -8px;
+  }
+  .questions-accordion .accordion-item__title {
+    padding: 14px 10px 14px 16px;
+  }
+  .questions-accordion .accordion-item__content-wrapper ul li::before {
+    width: 8px;
+    height: 8px;
+    top: 8px;
+  }
+  .questions-accordion .accordion-item__content-wrapper ul li {
+    padding-left: 18px;
+  }
+}

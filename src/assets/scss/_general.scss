@@ -138,3 +138,30 @@ body {
     border-radius: 24px;
   }
 }
+
+@media screen and (max-width: 479px) {
+  .title {
+    --title-fz: 56px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .title {
+    --title-fz: 48px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .section {
+    padding: 40px 0 20px;
+  }
+  .button {
+    --button-fz: 16px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+  }
+}

@@ -138,3 +138,115 @@
     height: 125px;
   }
 }
+
+@media screen and (max-width: 577px) {
+  .metrics-wrapper::after {
+    width: 460px;
+    height: 180px;
+  }
+  .metrics__title {
+    margin-bottom: 60px;
+  }
+  .metrics-numbers__list-item:nth-child(2) {
+    position: relative;
+  }
+  .metrics-numbers__list-item:first-child, 
+  .metrics-numbers__list-item:nth-child(3) {
+    margin-top: 0;
+  }
+  .metrics-numbers__list {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 95px;
+  }
+  .metrics .circle svg {
+    max-width: 390px;
+  }
+  .metrics-links {
+    gap: 10px;
+    margin-top: -370px;
+  }
+  .metrics__link {
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .metrics__link-text {
+    --text-fz: 20px;
+  }
+  .metrics-numbers__price .number {
+    --subtitle-fz: 54px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .metrics-links {
+    flex-direction: column;
+    margin-top: -365px;
+  }
+  .metrics__link {
+    height: 110px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  .metrics__link img {
+    width: 40px;
+  }
+  .metrics .circle svg {
+    max-width: 300px;
+  }
+  .metrics .circle {
+    margin-top: -345px;
+  }
+  .metrics-numbers__price .number {
+    --subtitle-fz: 48px;
+  }
+  .metrics-numbers__price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .metrics-numbers__price .text {
+    --text-fz: 22px;
+    color: rgba(var(--text-color-rgb), 0.36);
+  }
+  .metrics-numbers__list {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .metrics-wrapper::after {
+    width: 390px;
+    height: 160px;
+  }
+  .metrics__title {
+    margin-bottom: 40px;
+  }
+  .metrics-numbers .number {
+    font-size: 32px;
+  }
+  .metrics-numbers .text {
+    --additional-fz-1: 16px;
+  }
+  .metrics-numbers__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .metrics-numbers__price .number {
+    font-size: 40px;
+  }
+  .metrics-numbers__price .text {
+    --text-fz: 18px;
+  }
+  .metrics-numbers__price {
+    gap: 5px;
+  }
+  .metrics .circle svg {
+    max-width: 270px;
+  }
+  .metrics-numbers__list {
+    margin-bottom: 80px;
+  }
+} 

@@ -29,6 +29,7 @@
     position: relative;
     color: var(--text-color);
     padding-right: 18px;
+    white-space: nowrap;
     &::before {
       content: '->';
       font-family: var(--main-font);
@@ -75,5 +76,123 @@
 @media screen and (max-width: 679px) {
   .navigation .account {
     max-width: 110px;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .banner__text {
+    max-width: 380px;
+  }
+  .header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(10, 12, 15, 0.99);
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 99;
+    padding-left: 20px;
+    clip-path: circle(0);
+    transition: all 0.3s ease-in-out;
+    &.active {
+      clip-path: circle(75%);
+    }
+  }
+  .header .account {
+    position: absolute;
+    top: 20px;
+    left: -101%;
+    z-index: 100;
+    max-width: initial;
+    padding-right: 0;
+    padding-left: 34px;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+    &::after {
+      content: '';
+    }
+    &::before {
+      content: url("data:image/svg+xml;charset=UTF-8,<svg width='24' height='24' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M30 2C28.8954 2 28 2.89543 28 4C28 5.10457 28.8954 6 30 6C33.3137 6 36 8.68629 36 12C36 15.3137 33.3137 18 30 18C28.8954 18 28 18.8954 28 20C28 21.1046 28.8954 22 30 22C35.5228 22 40 17.5228 40 12C40 6.47715 35.5228 2 30 2ZM36.4 30C38.1132 30 39.2777 30.0016 40.1779 30.0751C41.0548 30.1467 41.5032 30.2766 41.816 30.436C42.5686 30.8195 43.1805 31.4314 43.564 32.184C43.7234 32.4968 43.8533 32.9452 43.9249 33.8221C43.9984 34.7223 44 35.8868 44 37.6C44 38.7531 43.9984 39.4977 43.9521 40.0643C43.9078 40.6077 43.8324 40.8091 43.782 40.908C43.5903 41.2843 43.2843 41.5903 42.908 41.782C42.8091 41.8324 42.6077 41.9078 42.0643 41.9521C41.4977 41.9984 40.7531 42 39.6 42H34C32.8954 42 32 42.8954 32 44C32 45.1046 32.8954 46 34 46H39.6H39.677C40.7314 46 41.6409 46.0001 42.3901 45.9389C43.1807 45.8743 43.9672 45.7316 44.7239 45.346C45.8529 44.7708 46.7708 43.8529 47.346 42.7239C47.7316 41.9672 47.8743 41.1807 47.9389 40.3901C48.0001 39.6409 48 38.7314 48 37.6771V37.6V37.5174C48 35.9075 48 34.5787 47.9116 33.4963C47.8198 32.3722 47.6226 31.3387 47.1281 30.3681C46.3611 28.8628 45.1372 27.6389 43.6319 26.8719C42.6613 26.3774 41.6278 26.1802 40.5037 26.0884C39.4213 26 38.0925 26 36.4826 26H36.4H34C32.8954 26 32 26.8954 32 28C32 29.1046 32.8954 30 34 30H36.4ZM6 12C6 6.47715 10.4772 2 16 2C21.5228 2 26 6.47715 26 12C26 17.5228 21.5228 22 16 22C10.4772 22 6 17.5228 6 12ZM10 26C4.47715 26 0 30.4772 0 36C0 41.5228 4.47715 46 10 46H22C27.5228 46 32 41.5228 32 36C32 30.4772 27.5228 26 22 26H10Z' fill='%23FFFFFF'/></svg>");
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      opacity: 0.56;
+    }
+    &.active {
+      left: 20px;
+    }
+  }
+  .navigation .menu-open__btn {
+    display: flex;
+  }
+  .navigation .menu-list {
+    flex-direction: column;
+    gap: 45px;
+    align-items: start;
+    justify-content: start;
+    margin-top: -40px;
+  }
+  .navigation .menu-list__item a {
+    position: relative;
+    font-size: 52px;
+    line-height: 92%;
+    font-weight: var(--font-weight-title);
+    color: var(--text-color);
+    text-shadow: 0px 32px 64px rgba(var(--text-color-rgb), 0.08);
+    letter-spacing: -0.06em;
+    padding: 0;
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+  .navigation .menu-list__item.active a {
+    border: none;
+    background: transparent;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2px;
+      width: 100%;
+      height: 2px;
+      background: var(--linear-1-color);
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .banner__text {
+    max-width: calc(100% - 60px);
+  }
+  .navigation .menu-list__item a {
+    font-size: 42px;
+  }
+  .navigation .menu-list {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .banner__text {
+    font-size: 12px;
+  }
+  .header .account {
+    font-size: 18px;
+    top: 15px;
+  }
+  .header .account.active {
+    left: 15px;
+  }
+  .navigation .menu-list__item a {
+    font-size: 36px;
+  }
+  .navigation .menu-list {
+    gap: 25px;
   }
 }
