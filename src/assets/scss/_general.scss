@@ -85,6 +85,13 @@ body {
   background-clip: content-box;
 }
 
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .container {
     padding: 0 15px;
