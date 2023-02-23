@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // animations
-  if (window.innerWidth >= 576) { 
+  if (window.innerWidth >= 577) { 
     // Main section animations
     gsap.from('.main__title', {
       opacity: 0,
